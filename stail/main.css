@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Laila;
+    background-image: url(../img/Прототип.png);
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-right: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: var(--lt-fond-color);
+    font-weight: 600;
+    white-space: nowrap;
+
+
+}
+
+
+:root {
+    --dk-fond-color: #1698AC;
+    --lt-fond-color: #FFFFFF;
+}
+
+
+
+@font-face {
+    font-family: Laila;
+    src: url(../fond/Laila-Bold.ttf);
+}
+
+@font-face {
+    font-family: Laila;
+    src: url(../fond/Laila-SemiBold.ttf);
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.logo-text {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--dk-fond-color);
+    position: relative;
+    left: -50px;
+
+}
+
+.logo-box,
+.nav-box {
+    flex: 1;
+}
+
+.nav-item {
+    border: 2px solid var(--dk-fond-color);
+    border-radius: 20px;
+    padding: 2px 28px;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s linear;
+}
+
+.nav-item:hover {
+    border: 2px solid var(--lt-fond-color);
+    background-color: var(--dk-fond-color);
+}
+
+.nav-link:hover {
+    color: var(--lt-fond-color);
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 10px;
+    }
+
+    .nav-box {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .nav-link {
+        font-size: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+    .nav-link {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .nav-link {
+        font-size: 35px;
+    }
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 150px;
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .autor-name {
+        color: #1698AC;
+        font-size: 30px;
+        font-weight: 600;
+        -webkit-text-stroke: 1px var(--lt-fond-color);
+    }
+
+    .autor-about {
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+
+    .autor-description {
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .autor-description {
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .main {
+        display: block;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .autor-lint {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 300;
+        color: #FFFFFF;
+        padding-left: 25%;
+        border-radius: 20px;
+        transition: background-color 0.3s linear;
+        box-sizing: content-box;
+        border: 1px solid transparent;
+
+
+    }
+
+    .autor-lint1 {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 300;
+        color: #FFFFFF;
+        padding-left: 20%;
+        border-radius: 20px;
+        transition: background-color 0.3s linear;
+        box-sizing: content-box;
+        border: 1px solid transparent;
+
+
+    }
+
+    .autor-banner {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+    .autor-name {
+        color: #1698AC;
+        font-size: 40px;
+        font-weight: 600;
+        -webkit-text-stroke: 1px var(--lt-fond-color);
+    }
+
+    .main {
+        display: block;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .autor-about {
+        font-size: 45px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+
+    .autor-description {
+        font-size: 25px;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .autor-description {
+        font-size: 25px;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .autor-lint {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        color: #FFFFFF;
+        padding-left: 25%;
+        border-radius: 20px;
+        transition: background-color 0.3s linear;
+        box-sizing: content-box;
+        border: 1px solid transparent;
+
+
+    }
+
+    .autor-lint1 {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        color: #FFFFFF;
+        padding-left: 20%;
+        border-radius: 20px;
+        transition: background-color 0.3s linear;
+        box-sizing: content-box;
+        border: 1px solid transparent;
+
+
+    }
+
+    .main {
+        display: block;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .autor-banner {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .autor-name {
+        color: #1698AC;
+        font-size: 70px;
+        font-weight: 600;
+        -webkit-text-stroke: 1px var(--lt-fond-color);
+    }
+
+    .autor-about {
+        font-size: 65px;
+        font-weight: 600;
+        color: #FFFFFF;
+
+    }
+
+    .autor-description {
+        font-size: 35px;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .autor-description {
+        font-size: 35px;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+
+    .autor-lint {
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 300;
+        color: #FFFFFF;
+        margin-left: 40px;
+        padding: 15px 53px;
+        border-radius: 20px;
+        transition: background-color 0.3s linear;
+        box-sizing: content-box;
+        border: 1px solid transparent;
+
+    }
+
+    .autor-lint1 {
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 300;
+        color: #FFFFFF;
+        margin-left: 40px;
+        padding: 15px 53px;
+        border-radius: 20px;
+        transition: background-color 0.3s linear;
+        box-sizing: content-box;
+        border: 1px solid transparent;
+
+    }
+
+}
+
+
+
+
+
+
+
+.autor-lint:hover {
+    font-weight: 600;
+    background-color: #1698AC;
+    border: 1px solid var(--lt-fond-color);
+
+
+
+
+}
+
+.autor-link-box {
+    margin-top: 75px;
+}
+
+
+.left-col {
+    margin-left: 40px;
+}
